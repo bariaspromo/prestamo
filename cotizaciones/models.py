@@ -126,11 +126,18 @@ class ItemCotizacion(models.Model):
         return f"{self.descripcion} x {self.cantidad}"
     
     def save(self, *args, **kwargs):
+        from decimal import Decimal
+        # Convertir todos a Decimal para evitar errores de tipo
+        cantidad = Decimal(str(self.cantidad))
+        precio_unitario = Decimal(str(self.precio_unitario))
+        descuento_porcentaje = Decimal(str(self.descuento_porcentaje))
+        itbis_porcentaje = Decimal(str(self.itbis_porcentaje))
+        
         # Calcular totales antes de guardar
-        self.subtotal = self.cantidad * self.precio_unitario
-        self.descuento_monto = self.subtotal * (self.descuento_porcentaje / 100)
+        self.subtotal = cantidad * precio_unitario
+        self.descuento_monto = self.subtotal * (descuento_porcentaje / Decimal('100'))
         base_imponible = self.subtotal - self.descuento_monto
-        self.itbis_monto = base_imponible * (self.itbis_porcentaje / 100)
+        self.itbis_monto = base_imponible * (itbis_porcentaje / Decimal('100'))
         self.total = self.subtotal - self.descuento_monto
         super().save(*args, **kwargs)
 
