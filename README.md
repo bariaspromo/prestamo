@@ -1,159 +1,287 @@
-# 🏦 LoanMaster AI v2.0 — Sistema Integral de Gestión de Préstamos
+# 🏢 Sistema de Gestión de Servicios - República Dominicana
 
 [![Licencia](https://img.shields.io/badge/Licencia-Privada-red.svg)]()
-[![Versión](https://img.shields.io/badge/Versión-2.0-blue.svg)]()
-[![Módulos](https://img.shields.io/badge/Módulos-22-green.svg)]()
-[![Funciones](https://img.shields.io/badge/Funciones-500%2B-orange.svg)]()
+[![Versión](https://img.shields.io/badge/Versión-1.0-blue.svg)]()
+[![Python](https://img.shields.io/badge/Python-3.12-green.svg)]()
+[![Django](https://img.shields.io/badge/Django-6.0-green.svg)]()
 
 ---
 
 ## 📌 Descripción
 
-**LoanMaster AI v2.0** es un sistema de inteligencia artificial de nivel empresarial diseñado para la **gestión integral del ciclo de vida de préstamos de dinero**. Cubre desde la prospección del cliente hasta el cierre final y archivo del expediente, operando como el motor inteligente central de una plataforma financiera completa.
+Sistema integral de gestión empresarial para empresas de servicios y productos de:
+- 💻 Informática
+- 🔌 Electrónica
+- ⚡ Electricidad
+- 🔒 Seguridad Electrónica
 
-Su arquitectura está inspirada en las mejores soluciones open source y comerciales del mercado: **Frappe Lending**, **Apache Fineract**, **Mifos X**, **CredFlow**, **HES LoanBox**, **CreditOnline**, entre otros.
+Con cumplimiento fiscal **DGII (República Dominicana)** integrado.
 
 ---
 
 ## 🏗️ Arquitectura del Sistema
 
 ```
-LoanMaster AI v2.0
-├── 📋 Módulo 1:  Gestión de Clientes (CRM Financiero)
-├── 💰 Módulo 2:  Productos de Préstamo
-├── 📝 Módulo 3:  Solicitud y Evaluación de Préstamos
-├── 🧮 Módulo 4:  Cálculos Financieros
-├── 💵 Módulo 5:  Desembolso
-├── 📆 Módulo 6:  Gestión de Pagos y Cobros
-├── ⚠️ Módulo 7:  Gestión de Morosidad y Cobranza
-├── 🔄 Módulo 8:  Refinanciamiento y Reestructuración
-├── 🛡️ Módulo 9:  Garantías y Colaterales
-├── 📊 Módulo 10: Reportes y Analítica
-├── 👥 Módulo 11: Gestión de Usuarios y Roles
-├── 🔔 Módulo 12: Notificaciones y Comunicación
-├── ⚙️ Módulo 13: Configuración del Sistema
-├── 🏪 Módulo 14: Portal de Autoservicio (Cliente)
-├── 💼 Módulo 15: Contabilidad e Integración Financiera
-├── 🔒 Módulo 16: Prevención de Lavado de Dinero (PLD/FT)
-├── 📱 Módulo 17: Aplicación Móvil / Gestión en Campo
-├── 🤝 Módulo 18: Préstamos P2P y Grupales
-├── 📈 Módulo 19: Inteligencia Artificial y Machine Learning
-├── 🌐 Módulo 20: API y Ecosistema Digital
-├── 🔐 Módulo 21: Seguridad y Protección de Datos
-└── 📋 Módulo 22: Cumplimiento Regulatorio y Auditoría
+Sistema de Gestión de Servicios
+├── 👥 Clientes (CRM)
+│   ├── Gestión de clientes personas/empresas
+│   ├── Contactos múltiples por cliente
+│   ├── Documentos y archivos
+│   └── Datos fiscales DGII
+│
+├── 📦 Inventario
+│   ├── Productos y servicios
+│   ├── Stock normal
+│   ├── Consignación
+│   ├── Dropshipping
+│   ├── Equipos de renta
+│   └── Movimientos de inventario
+│
+├── 🔧 Servicios
+│   ├── Contratos de servicio (igualas)
+│   ├── Órdenes de servicio
+│   ├── SLA (Acuerdos de Nivel de Servicio)
+│   ├── Cronogramas de servicios
+│   └── Contratos de renta (equipos/personal)
+│
+├── 💰 Facturación
+│   ├── Facturas con NCF (DGII)
+│   ├── Secuencias NCF
+│   ├── Pagos y recibos
+│   ├── Notas de crédito
+│   └── Cumplimiento fiscal RD
+│
+├── 📋 Cotizaciones
+│   ├── Generación de cotizaciones
+│   ├── Seguimiento
+│   ├── Aprobaciones
+│   └── Conversión a factura
+│
+└── 👷 Personal
+    ├── Empleados y técnicos
+    ├── Asignación a servicios
+    ├── Asignación a contratos
+    ├── Disponibilidad
+    └── Rendimiento
 ```
 
 ---
 
-## 🌐 Marcos Regulatorios Soportados
+## ✨ Características Principales
 
-| País | Regulador Principal | Tasa de Referencia |
-|------|--------------------|--------------------|
-| 🇲🇽 México | CNBV / CONDUSEF | TIIE |
-| 🇨🇴 Colombia | Superintendencia Financiera | DTF |
-| 🇵🇪 Perú | SBS | TAMN/TAMEX |
-| 🇪🇨 Ecuador | Superintendencia de Bancos | BCE |
-| 🇦🇷 Argentina | BCRA | Badlar |
-| 🇨🇱 Chile | CMF | UF |
-| 🇩🇴 Rep. Dominicana | SIB | — |
-| 🇪🇸 España | Banco de España | Euribor |
-| 🇺🇸 Estados Unidos | CFPB | Federal Funds Rate |
+### 🧾 Facturación DGII Compliant
+- ✅ Números de Comprobante Fiscal (NCF)
+- ✅ Tipos de NCF (B01, B02, B14, B15, B16)
+- ✅ ITBIS (18%)
+- ✅ Secuencias de NCF con control de vencimiento
+- ✅ Notas de crédito
 
----
+### 📊 Gestión de Servicios
+- Contratos de servicio (igualas de equipos y servicios)
+- Órdenes de servicio con seguimiento completo
+- SLA (Service Level Agreements)
+- Cronogramas de servicios recurrentes
+- Calificación de satisfacción del cliente
 
-## 🚀 Características Principales
+### 💼 Gestión de Clientes (CRM)
+- Clientes personas físicas y empresas
+- Cédula, RNC, Pasaporte
+- Múltiples contactos por cliente
+- Gestión documental
+- Historial completo
 
-### Originación y Evaluación Crediticia
-- Scoring crediticio interno con sistema de puntos (0-100)
-- Consulta automática a burós de crédito
-- Evaluación de capacidad de pago con ratio deuda/ingreso
-- Flujos de aprobación configurables por monto y riesgo
-- Cruce automático contra listas PLD/OFAC/ONU
+### 📦 Inventario Avanzado
+- Stock normal
+- Inventario en consignación
+- Dropshipping
+- Control de stock mínimo/máximo
+- Movimientos de inventario
+- Equipos de renta con seguimiento
 
-### Cálculos Financieros Avanzados
-- Métodos de amortización: Francés, Alemán, Americano, Flat, Balloon, Irregular
-- Frecuencias de pago: Diario, Semanal, Catorcenal, Quincenal, Mensual y más
-- Cálculo de CAT, APR, TAE, CFT según regulación por país
-- Simulación de escenarios múltiples
+### 💵 Cotizaciones
+- Generación de cotizaciones profesionales
+- Seguimiento de cotizaciones
+- Flujo de aprobación
+- Conversión automática a factura
 
-### Inteligencia Artificial y Machine Learning
-- Scoring crediticio con modelos ML (XGBoost, Random Forest, Neural Networks)
-- Predicción de morosidad con Early Warning System
-- Optimización de estrategias de cobranza
-- Detección de fraude con Graph Analytics
-- Chatbot inteligente con NLP y análisis de sentimiento
-- Pricing dinámico basado en riesgo
-
-### Cobranza Inteligente
-- Clasificación automática por etapas de mora (preventiva → castigo)
-- Asignación automática de cartera a cobradores
-- App móvil para gestión en campo con geolocalización
-- Predicción de probabilidad de recuperación
-- Gestión de promesas de pago y acuerdos
-
-### Seguridad Empresarial
-- Cifrado AES-256 en reposo y TLS 1.3 en tránsito
-- Autenticación multifactor (2FA)
-- Control de acceso basado en roles (14 roles predefinidos)
-- Auditoría completa de cada operación
-- Cumplimiento PLD/FT con cruce de listas internacionales
+### 👥 Gestión de Personal
+- Empleados/técnicos
+- Asignación a servicios
+- Asignación a contratos
+- Control de disponibilidad
+- Métricas de rendimiento
 
 ---
 
-## 📁 Estructura del Repositorio
+## 🚀 Instalación
+
+### Requisitos Previos
+- Python 3.12+
+- pip
+
+### Pasos de Instalación
+
+1. **Clonar el repositorio**
+```bash
+git clone https://github.com/bariaspromo/prestamo.git
+cd prestamo
+```
+
+2. **Crear entorno virtual**
+```bash
+python -m venv venv
+source venv/bin/activate  # En Windows: venv\Scripts\activate
+```
+
+3. **Instalar dependencias**
+```bash
+pip install -r requirements.txt
+```
+
+4. **Ejecutar migraciones**
+```bash
+python manage.py migrate
+```
+
+5. **Crear superusuario**
+```bash
+python manage.py createsuperuser
+```
+
+6. **Iniciar servidor de desarrollo**
+```bash
+python manage.py runserver
+```
+
+7. **Acceder al panel de administración**
+```
+http://127.0.0.1:8000/admin
+```
+
+---
+
+## 📁 Estructura del Proyecto
 
 ```
 prestamo/
-├── README.md
-└── docs/
-    └── prompt-sistema/
-        ├── parte1-modulos-1-8.md        # Módulos 1-8: Core del negocio
-        ├── parte2-modulos-9-15.md       # Módulos 9-15: Operaciones y reportes
-        └── parte3-modulos-16-22.md      # Módulos 16-22: Seguridad, IA y APIs
+├── manage.py
+├── requirements.txt
+├── .gitignore
+├── servicios_core/          # Configuración del proyecto
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── clientes/                # App de clientes
+│   ├── models.py           # Cliente, Contacto, Documento
+│   └── admin.py
+├── inventario/             # App de inventario
+│   ├── models.py          # Producto, Categoría, Movimiento, EquipoRenta
+│   └── admin.py
+├── servicios/              # App de servicios
+│   ├── models.py          # Contrato, SLA, OrdenServicio, Cronograma, ContratoRenta
+│   └── admin.py
+├── facturacion/            # App de facturación
+│   ├── models.py          # Factura, ItemFactura, Pago, NCF, NotaCredito
+│   └── admin.py
+├── cotizaciones/           # App de cotizaciones
+│   ├── models.py          # Cotizacion, Item, Seguimiento, Aprobacion
+│   └── admin.py
+└── personal/               # App de personal
+    ├── models.py          # Empleado, Asignacion, Disponibilidad, Rendimiento
+    └── admin.py
 ```
 
 ---
 
-## 📊 Métricas del Prompt
+## 🔐 Seguridad
 
-| Métrica | Valor |
-|---------|-------|
-| Módulos funcionales | 22 |
-| Funciones detalladas | 500+ |
-| Reglas de negocio críticas | 48 |
-| Marcos regulatorios | 9 países |
-| Procesos batch automatizados | Diarios, semanales, mensuales, anuales |
-| Roles de usuario | 14 predefinidos |
-| Canales de comunicación | SMS, Email, WhatsApp, Push, IVR, Carta |
-| Métodos de amortización | 6 |
+- Validación de datos en todos los modelos
+- Protección CSRF habilitada
+- Autenticación requerida para acceso al admin
+- Control de acceso basado en permisos de Django
 
 ---
 
-## 📏 Reglas de Negocio Críticas (Resumen)
+## 📊 Modelos de Datos Principales
 
-- ❌ **NUNCA** aprobar si ratio deuda/ingreso > 40%
-- ❌ **NUNCA** desembolsar sin contrato firmado
-- ❌ **NUNCA** exceder tasa máxima legal (usura)
-- ✅ **SIEMPRE** aplicar pagos en orden: gastos → moratorios → intereses → capital
-- ✅ **SIEMPRE** generar recibo por cada pago
-- ✅ **SIEMPRE** registrar auditoría de cada operación
-- ✅ **SIEMPRE** cifrar datos sensibles
-- ✅ **SIEMPRE** cumplir normativa del país de operación
+### Cliente
+- Persona física o empresa
+- Cédula / RNC / Pasaporte
+- Datos fiscales para DGII
+- Múltiples contactos
+
+### Producto
+- Productos físicos o servicios
+- Stock normal / Consignación / Dropshipping
+- Control de inventario
+- Precios de venta y renta
+
+### Contrato de Servicio
+- Igualas de equipos y servicios
+- SLA configurables
+- Cronogramas de servicios recurrentes
+
+### Factura
+- NCF (DGII compliant)
+- ITBIS automático
+- Multiple items
+- Pagos parciales/completos
+- Estados: Borrador, Emitida, Pagada, Vencida, Anulada
+
+### Orden de Servicio
+- Tipos: Preventivo, Correctivo, Instalación, Reparación
+- Prioridades y estados
+- Asignación de técnicos
+- Tracking de SLA
+- Calificación del cliente
 
 ---
 
-## 🛠️ Tecnologías de Referencia
+## 🇩🇴 Cumplimiento DGII
 
-| Categoría | Tecnologías |
-|-----------|-------------|
-| Core Banking | Apache Fineract, Mifos X |
-| Gestión Empresarial | Frappe Lending, HES LoanBox |
-| ML/IA | XGBoost, LightGBM, Random Forest, SHAP |
-| Detección Fraude | Graph Analytics (Neo4j) |
-| API | REST, OAuth 2.0, JWT, Webhooks, OpenAPI/Swagger |
-| Comunicaciones | Twilio, SendGrid, WhatsApp Business API |
-| Facturación | CFDI (México), DIAN (Colombia), SUNAT (Perú) |
-| Integraciones | Zapier, Power Automate, Make |
+### Números de Comprobante Fiscal (NCF)
+
+El sistema soporta todos los tipos de NCF:
+
+| Tipo | Descripción |
+|------|-------------|
+| B01  | Facturas de Crédito Fiscal |
+| B02  | Facturas de Consumo |
+| B14  | Régimen Especial de Tributación |
+| B15  | Gubernamental |
+| B16  | Exportaciones |
+
+### Características
+- Secuencias NCF con control de rango y vencimiento
+- Generación automática de NCF al emitir factura
+- ITBIS (18%) calculado automáticamente
+- Soporte para notas de crédito
+
+---
+
+## 🛠️ Tecnologías Utilizadas
+
+| Categoría | Tecnología |
+|-----------|------------|
+| Backend | Python 3.12, Django 6.0 |
+| Base de Datos | SQLite (desarrollo), PostgreSQL/MySQL (producción) |
+| Admin UI | Django Admin |
+| Validación | Django Forms & Validators |
+
+---
+
+## 📈 Próximas Características
+
+- [ ] API REST con Django REST Framework
+- [ ] Frontend web (React/Vue)
+- [ ] Reportes en PDF
+- [ ] Dashboard con gráficos
+- [ ] Notificaciones por email/SMS
+- [ ] Integración con WhatsApp Business
+- [ ] App móvil para técnicos
+- [ ] Portal de autoservicio para clientes
+- [ ] Generación automática de NCF electrónicos
+- [ ] Integración con bancos para pagos
 
 ---
 
@@ -165,8 +293,14 @@ Este proyecto es de uso **privado**. Todos los derechos reservados.
 
 ## 👤 Autor
 
-**bariaspromo** — Sistema diseñado para operaciones de préstamo empresarial.
+**bariaspromo** — Sistema de gestión para empresas de servicios de informática y electrónica.
 
 ---
 
-> **📌 Nota:** Este repositorio contiene la documentación del prompt de sistema. La implementación del código fuente se desarrollará de forma progresiva siguiendo la arquitectura de los 22 módulos definidos.
+## 📞 Soporte
+
+Para soporte técnico o consultas, contactar al administrador del sistema.
+
+---
+
+> **📌 Nota:** Este es un sistema empresarial completo diseñado específicamente para empresas de servicios técnicos en República Dominicana con cumplimiento fiscal DGII.
